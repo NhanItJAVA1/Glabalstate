@@ -89,13 +89,13 @@ function Counter() {
             <div className="flex items-center justify-center mb-6">
               <div className="w-16 h-1 bg-gradient-to-r from-pink-500 to-transparent rounded-full"></div>
               <h2 className="mx-4 text-3xl font-bold text-center bg-gradient-to-r from-pink-300 to-purple-300 bg-clip-text text-transparent">
-                Elegant Counter
+                Counter App
               </h2>
               <div className="w-16 h-1 bg-gradient-to-l from-purple-500 to-transparent rounded-full"></div>
             </div>
             
             <p className="text-center text-white text-opacity-70 mb-8 font-light">
-              A beautiful counter using React's useReducer hook
+              React's useReducer hook
             </p>
             
             {/* Counter display with glow effect */}
@@ -149,7 +149,7 @@ function Counter() {
         
         {/* Footer credit */}
         <div className="mt-8 text-white text-opacity-50 text-sm">
-          Created with React & Tailwind CSS
+          React & Tailwind CSS
         </div>
       </div>
     </div>
