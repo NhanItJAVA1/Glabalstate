@@ -5,12 +5,10 @@ import { increment, decrement, reset, undo } from '../store/CounterSlice'; // Đ
 import './CounterReduxAnimation.css';
 
 export default function Counter() {
-    console.log('Redux state test:', useSelector(state => state));
+  const count = useSelector(state => state.counter.count);
+  const previousCount = useSelector(state => state.counter.previousCount);
+  const history = useSelector(state => state.counter.history);
 
-    const count = useSelector(state => state.counter.count);
-    const previousCount = useSelector(state => state.counter.previousCount);
-    const history = useSelector(state => state.counter.history);
-    
   const dispatch = useDispatch();
 
   const [animationClass, setAnimationClass] = useState('');
@@ -35,7 +33,7 @@ export default function Counter() {
           </h2>
           <div className="w-16 h-1 bg-gradient-to-l from-purple-500 to-transparent rounded-full"></div>
         </div>
-        
+
         {/* Counter display with jump effect */}
         <div className="my-6 text-8xl font-bold text-center text-black">
           <span className={`inline-block ${animationClass}`}>{count}</span>

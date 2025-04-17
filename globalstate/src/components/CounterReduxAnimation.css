@@ -2,103 +2,116 @@
 
 /* Animation for the counter number to jump */
 @keyframes jump {
-    0% {
-      transform: translateY(0); /* Vị trí ban đầu */
-    }
-    30% {
-      transform: translateY(-20px); /* Nhảy lên */
-    }
-    50% {
-      transform: translateY(10px); /* Nhảy xuống quá mức một chút */
-    }
-    70% {
-      transform: translateY(-10px); /* Quay lại một chút */
-    }
-    100% {
-      transform: translateY(0); /* Về vị trí ban đầu */
-    }
+  0% {
+    transform: translateY(0);
+    /* Vị trí ban đầu */
   }
-  
-  /* Class to apply the jump animation */
-  .animate-jump {
-    animation: jump 0.4s ease-in-out;
+
+  30% {
+    transform: translateY(-20px);
+    /* Nhảy lên */
   }
-  
-  /* Animation for the counter number */
-  @keyframes slideUp {
-    0% {
-      transform: translateY(20px);
-      opacity: 0;
-    }
-    100% {
-      transform: translateY(0);
-      opacity: 1;
-    }
+
+  50% {
+    transform: translateY(10px);
+    /* Nhảy xuống quá mức một chút */
   }
-  
-  @keyframes slideDown {
-    0% {
-      transform: translateY(-20px);
-      opacity: 0;
-    }
-    100% {
-      transform: translateY(0);
-      opacity: 1;
-    }
+
+  70% {
+    transform: translateY(-10px);
+    /* Quay lại một chút */
   }
-  
-  @keyframes glow {
-    0% {
-      text-shadow: 0 0 5px rgba(255, 255, 255, 0.5), 0 0 10px rgba(255, 255, 255, 0.4), 0 0 15px rgba(255, 255, 255, 0.3);
-    }
-    50% {
-      text-shadow: 0 0 10px rgba(255, 255, 255, 1), 0 0 20px rgba(255, 255, 255, 0.8), 0 0 30px rgba(255, 255, 255, 0.6);
-    }
-    100% {
-      text-shadow: 0 0 5px rgba(255, 255, 255, 0.5), 0 0 10px rgba(255, 255, 255, 0.4), 0 0 15px rgba(255, 255, 255, 0.3);
-    }
+
+  100% {
+    transform: translateY(0);
+    /* Về vị trí ban đầu */
   }
-  
-  /* Glowing effect for the counter number */
-  .glowing-text {
-    animation: glow 1.5s ease-in-out infinite;
+}
+
+/* Class to apply the jump animation */
+.animate-jump {
+  animation: jump 0.4s ease-in-out;
+}
+
+/* Animation for the counter number */
+@keyframes slideUp {
+  0% {
+    transform: translateY(20px);
+    opacity: 0;
   }
-  
-  /* Button hover effects */
-  .btn-hover {
-    transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+
+  100% {
+    transform: translateY(0);
+    opacity: 1;
   }
-  
-  .btn-hover:hover {
-    transform: scale(1.1);
-    box-shadow: 0 0 10px rgba(255, 255, 255, 0.6), 0 0 20px rgba(255, 255, 255, 0.3);
+}
+
+@keyframes slideDown {
+  0% {
+    transform: translateY(-20px);
+    opacity: 0;
   }
-  
-  /* Button glowing effect */
-  .shadow-glow-pink {
-    box-shadow: 0 0 10px rgba(255, 105, 180, 0.7), 0 0 20px rgba(255, 105, 180, 0.4);
+
+  100% {
+    transform: translateY(0);
+    opacity: 1;
   }
-  
-  .shadow-glow-purple {
-    box-shadow: 0 0 10px rgba(138, 43, 226, 0.7), 0 0 20px rgba(138, 43, 226, 0.4);
+}
+
+@keyframes glow {
+  0% {
+    text-shadow: 0 0 5px rgba(255, 255, 255, 0.5), 0 0 10px rgba(255, 255, 255, 0.4), 0 0 15px rgba(255, 255, 255, 0.3);
   }
-  
-  .shadow-glow-blue {
-    box-shadow: 0 0 10px rgba(0, 191, 255, 0.7), 0 0 20px rgba(0, 191, 255, 0.4);
+
+  50% {
+    text-shadow: 0 0 10px rgba(255, 255, 255, 1), 0 0 20px rgba(255, 255, 255, 0.8), 0 0 30px rgba(255, 255, 255, 0.6);
   }
-  
-  /* Glass effect backdrop blur for the container */
-  .backdrop-blur-lg {
-    backdrop-filter: blur(10px);
+
+  100% {
+    text-shadow: 0 0 5px rgba(255, 255, 255, 0.5), 0 0 10px rgba(255, 255, 255, 0.4), 0 0 15px rgba(255, 255, 255, 0.3);
   }
-  
-  /* Add some animation to buttons */
-  button {
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-  }
-  
-  button:hover {
-    transform: scale(1.1);
-    box-shadow: 0 0 15px rgba(255, 255, 255, 0.5);
-  }
-  
+}
+
+/* Glowing effect for the counter number */
+.glowing-text {
+  animation: glow 1.5s ease-in-out infinite;
+}
+
+/* Button hover effects */
+.btn-hover {
+  transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+}
+
+.btn-hover:hover {
+  transform: scale(1.1);
+  box-shadow: 0 0 10px rgba(255, 255, 255, 0.6), 0 0 20px rgba(255, 255, 255, 0.3);
+}
+
+/* Button glowing effect */
+.shadow-glow-pink {
+  box-shadow: 0 0 10px rgba(255, 105, 180, 0.7), 0 0 20px rgba(255, 105, 180, 0.4);
+}
+
+.shadow-glow-purple {
+  box-shadow: 0 0 10px rgba(138, 43, 226, 0.7), 0 0 20px rgba(138, 43, 226, 0.4);
+}
+
+.shadow-glow-blue {
+  box-shadow: 0 0 10px rgba(0, 191, 255, 0.7), 0 0 20px rgba(0, 191, 255, 0.4);
+}
+
+/* Glass effect backdrop blur for the container */
+.backdrop-blur-lg {
+  -webkit-backdrop-filter: blur(10px);
+  backdrop-filter: blur(10px);
+}
+
+/* Add some animation to buttons */
+button {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+button:hover {
+  transform: scale(1.1);
+  box-shadow: 0 0 15px rgba(255, 255, 255, 0.5);
+}
