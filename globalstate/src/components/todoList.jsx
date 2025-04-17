@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { useDispatch, useSelector } from "react-redux";
-import { addTodo, toggleTodo, removeTodo, setFilter } from "../store/todoSlice";
+import { addTodo, toggleTodo, removeTodo } from "../store/todoSlice";
 
 function generateId() {
     return Math.random().toString(36).substring(2) + Date.now().toString(36);
